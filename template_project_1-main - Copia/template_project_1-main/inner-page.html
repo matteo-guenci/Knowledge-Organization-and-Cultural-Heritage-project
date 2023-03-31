@@ -130,7 +130,7 @@
         
       </div>
       <section id="services" class="services">
-        <div class="container" data-aos="fade-up">
+        <div class="container-fluid" data-aos="fade-up">
           <div class="section-title">
             <p>Data description</p>
           </div>
@@ -156,29 +156,67 @@
                 <div class="tab-pane fade show active" id="nav-table1" role="tabpanel" aria-labelledby="nav-table1-tab">
                   <table class="table table-dark table-hover">
                     <thead>
-                      <th>Subject</th>
-                      <th>Predicate</th>
-                      <th>Object</th>
-                      <th>Object</th>
-                      <th>Object</th>
-                      <th>Object</th>
-                      <th>Object</th>
+                      <th>Property</th>
+                      <th>Schema.org</th>
+                      <th>Dublin Core</th>
+                      <th>Marc 21</th>
+                      <th>Ebu Core</th>
+                      <th>PREMIS</th>
+                      <th>MODS</th>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Digitized Article,</td>
-                        <td>dpn:hostedBy,</td>
-                        <td>Newspaper.com Digital Archive</td>
+                        <td>Creator</td>
+                        <td>Schema:creator
+                          Schema:author</td>
+                        <td>dcterms:creator</td>
+                        <td>100 -Main Entry-Personal Name 100 1#$a</td>
+                        <td>ebucore:creator</td>
+                        <td>&lt;agentIdentifierValue&gt;</td>
+                        <td>&lt;name&gt;
+                          &lt;role&gt;</td>
                       </tr>
                       <tr>
-                        <td>Digitized Article,</td>
-                        <td>crm:P55_has_current_location</td>
-                        <td>London</td>
+                        <td>Contributor</td>
+                        <td>Schema:contributor</td>
+                        <td>dcterms:contributor</td>
+                        <td>700 - Added Entry - Personal Name 700 1#$a;</td>
+                        <td>ebucore:contributor</td>
+                        <td>&lt;agentIdentifierValue&gt;</td>
+                        <td>&lt;name&gt;
+                          &lt;role&gt;</td>
                       </tr>
                       <tr>
-                        <td>Digitized Article,</td>
-                        <td>crm:P102_has_title,</td>
-                        <td>480 held in terrorist bomb hunt</td>
+                        <td>Producer</td>
+                        <td>schema:productionCompany 
+                          schema:producer</td>
+                        <td>dcterms:contributor</td>
+                        <td>710 - Added Entry-Corporate Name 710 2#$a;508 - Creation/Production Credits Note508##$a</td>
+                        <td>Ebucore:contributor</td>
+                        <td>&lt;agentIdentifierValue&gt;</td>
+                        <td>&lt;name&gt;
+                          &lt;role&gt;</td>                        
+                      </tr>
+                      <tr>
+                        <td>Publisher</td>
+                        <td>schema:publisher</td>
+                        <td>dcterms:publisher</td>
+                        <td>260 - Publication, Distribution etc,260##$b</td>
+                        <td>ebucore:publisher</td>
+                        <td>&lt;agentIdentifierValue&gt;</td>
+                        <td>&lt;publisher&gt;</td>                        
+                      </tr>
+                      <tr>
+                        <td>Rights holder</td>
+                        <td>schema:copyrightHolder;
+                          schema:license</td>
+                        <td>Dcterms:rightsHolder;
+                          Dcterms:license</td>
+                        <td>542 - Information Relating to Copyright Status 542##$d</td>
+                        <td>Ebucore:rights</td>
+                        <td>&lt;rightsHolder&gt;</td>
+                        <td>&lt;accessCondition&gt;
+                          &lt;useAndReproduction&gt;</td>                        
                       </tr>
                     </tbody>
                   </table>
@@ -186,19 +224,74 @@
                 <div class="tab-pane fade" id="nav-table2" role="tabpanel" aria-labelledby="nav-table2-tab">
                   <table class="table table-dark table-hover">
                     <thead>
-                      <th>Subject</th>
-                      <th>Predicate</th>
-                      <th>Object</th>
-                      <th>Object</th>
-                      <th>Object</th>
-                      <th>Object</th>
-                      <th>Object</th>
+                      <th>Property</th>
+                      <th>Schema.org</th>
+                      <th>Dublin Core</th>
+                      <th>Marc 21</th>
+                      <th>Ebu Core</th>
+                      <th>PREMIS</th>
+                      <th>MODS</th>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Value 1</td>
-                        <td>Value 2</td>
-                        <td>Value 2</td>
+                        <td>Source</td>
+                        <td>/</td>
+                        <td>dcterms:source</td>
+                        <td>856 - Electronic Location and Access856 4#</td>
+                        <td>ebucore:source</td>
+                        <td>/</td>
+                        <td>&lt;location&gt;
+                          &lt;origininfo&gt;</td>
+                      </tr>
+                      <tr>
+                        <td>Title</td>
+                        <td>schema:name</td>
+                        <td>dcterms:title</td>
+                        <td>240 - Uniform Title240#$a</td>
+                        <td>ebucore:title</td>
+                        <td>&lt;originalName&gt;</td>
+                        <td>&lt;titleInfo&gt;</td>
+                      </tr>
+                      <tr>
+                        <td>Type</td>
+                        <td>schema:additionalType
+                          schema:category</td>
+                        <td>dcterms:type</td>
+                        <td>007 - Physical Description Fixed Field008 - Fixed-Length Data Elements</td>
+                        <td>ebucore:type</td>
+                        <td>&lt;objectCategory&gt;</td>
+                        <td>&lt;typeOfResource&gt;</td>
+                      </tr>
+                      <tr>
+                        <td>Subject</td>
+                        <td>schema:about</td>
+                        <td>dcterms:subject</td>
+                        <td>6XX: Subject Access Fields</td>
+                        <td>ebucore:subject</td>
+                        <td>/</td>
+                        <td>&lt;subject&gt;
+                          &lt;topic&gt;</td>
+                      </tr>
+                      <tr>
+                        <td>Language</td>
+                        <td>schema:inLanguage</td>
+                        <td>dcterms:format
+                          dcterms:extent</td>
+                        <td>007 - Physical Description Fixed Field</td>
+                        <td>ebucore:format</td>
+                        <td>&lt;forma&gt;</td>
+                        <td>&lt;physicalDescription&gt;
+                          &lt;form&gt;
+                        &lt;extend&gt;</td>
+                      </tr>
+                      <tr>
+                        <td>Event</td>
+                        <td>schema:event</td>
+                        <td>dcterms:event</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>Event</td>
+                        <td>/</td>
                       </tr>
                     </tbody>
                   </table>
@@ -206,19 +299,41 @@
                 <div class="tab-pane fade" id="nav-table3" role="tabpanel" aria-labelledby="nav-table3-tab">
                   <table class="table table-dark table-hover">
                     <thead>
-                      <th>Subject</th>
-                      <th>Predicate</th>
-                      <th>Object</th>
-                      <th>Object</th>
-                      <th>Object</th>
-                      <th>Object</th>
-                      <th>Object</th>
+                      <th>Property</th>
+                      <th>Schema.org</th>
+                      <th>Dublin Core</th>
+                      <th>Marc 21</th>
+                      <th>Ebu Core</th>
+                      <th>PREMIS</th>
+                      <th>MODS</th>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Value 1</td>
-                        <td>Value 2</td>
-                        <td>Value 1</td>
+                        <td>Publication Date</td>
+                        <td>datePublished</td>
+                        <td>dcterms:available</td>
+                        <td>260 - Publication, Distribution260 $c, 264 $c</td>
+                        <td>ebucore:dateIssued</td>
+                        <td>/</td>
+                        <td>&lt;dateIssued&gt;</td>
+                      </tr>
+                      <tr>
+                        <td>Creation Date</td>
+                        <td>dateCreated</td>
+                        <td>dcterms:created</td>
+                        <td>260 - Publication, Distribution260 $c, 264 $c</td>
+                        <td>ebucore:dateCreated</td>
+                        <td>&lt;eventDateTime&gt;</td>
+                        <td>&lt;dateCreated&gt;</td>
+                      </tr>
+                      <tr>
+                        <td>Time Span</td>
+                        <td>Schema:StartDate/endDate</td>
+                        <td>dcterms:coverage</td>
+                        <td>008 - Fixed-Length Data Elements</td>
+                        <td>ebucore:periodOfTime</td>
+                        <td>/</td>
+                        <td>/</td>
                       </tr>
                     </tbody>
                   </table>
@@ -226,19 +341,52 @@
                 <div class="tab-pane fade" id="nav-table4" role="tabpanel" aria-labelledby="nav-table4-tab">
                   <table class="table table-dark table-hover">
                     <thead>
-                      <th>Subject</th>
-                      <th>Predicate</th>
-                      <th>Object</th>
-                      <th>Object</th>
-                      <th>Object</th>
-                      <th>Object</th>
-                      <th>Object</th>
+                      <th>Property</th>
+                      <th>Schema.org</th>
+                      <th>Dublin Core</th>
+                      <th>Marc 21</th>
+                      <th>Ebu Core</th>
+                      <th>PREMIS</th>
+                      <th>MODS</th>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Value 1</td>
-                        <td>Value 2</td>
-                        <td>Value 1</td>
+                        <td>Collection/ispart of</td>
+                        <td>schema:isPartOf</td>
+                        <td>dcterms:isPartOf</td>
+                        <td>490 - Series Statement490	0#$a 830 - Series Added Entry - Uniform Title</td>
+                        <td>ebucore:isPartOf</td>
+                        <td>&lt;relationshipType&gt;</td>
+                        <td>&lt;relatedItem&gt;</td>
+                      </tr>
+                      <tr>
+                        <td>place/location</td>
+                        <td>schema:spatial</td>
+                        <td>dcterms:coverage</td>
+                        <td>852-location</td>
+                        <td>ebucore:location</td>
+                        <td>/</td>
+                        <td>&lt;location&gt;</td>
+                      </tr>
+                      <tr>
+                        <td>publication place</td>
+                        <td>schema:spatial</td>
+                        <td>dcterms:coverage</td>
+                        <td>260 - Publication, Distribution260 $a</td>
+                        <td>ebucore:location</td>
+                        <td>/</td>
+                        <td>&lt;location&gt;
+                          &lt;physicalLocation&gt;</td>
+                      </tr>
+                      <tr>
+                        <td>current location/current owner/host</td>
+                        <td>schema:itemlocation</td>
+                        <td>dcterms:coverage</td>
+                        <td>850 - Holding Institution</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>&lt;location&gt;
+                          &lt;physicalLocation&gt;</td>
                       </tr>
                     </tbody>
                   </table>
