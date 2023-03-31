@@ -1572,3 +1572,12 @@ section {
   font-size: 13px;
   color: #fff;
 }
+.nav-tabs {
+  justify-content: center;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
