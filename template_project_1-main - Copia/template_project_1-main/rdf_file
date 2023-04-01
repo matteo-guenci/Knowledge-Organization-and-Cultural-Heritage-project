@@ -1,0 +1,101 @@
+@base <https://w3id.org/yearsoflead> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cwrc: <http://sparql.cwrc.ca/ontologies/cwrc#> .
+@prefix akt: <http://www.aktors.org/ontology/portal#> .
+@prefix mads: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix dpn: <http://purl.org/dpn#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix sbeo: <http://purl.obolibrary.org/obo/sbeo/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix swc: <http://data.semanticweb.org/ns/swc/ontology#> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix oc: <http://opencitations.net/ontology/> .
+@prefix modsci: <http://www.w3.org/ns/sosa/modsci#> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix dpo: <http://rdf-vocabulary.ddialliance.org/discovery#> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/yearsoflead/event/PiazzaFontana> a crm:E5_Event;
+	crm:P82_at_some_time_within <https://w3id.org/yearsoflead/event>.
+
+<https://w3id.org/yearsoflead/event/CalabresiMurder> a crm:E5_Event;
+	event:Agent <https://dbpedia.org/page/Luigi_Calabresi>;
+	oc:postcondition <https://w3id.org/yearsoflead/event/PiazzaFontana>.
+	
+<https://w3id.org/yearsoflead/event/BolognaMassacre> a crm:E5_Event;
+	cwrc:representedBy <https://w3id.org/yearsoflead/item/song>;
+	crm:P82_at_some_time_within <https://w3id.org/yearsoflead/event>.
+
+<https://w3id.org/yearsoflead/person/AldoMoro> a foaf:Person;
+	owl:sameAs <https://www.wikidata.org/wiki/Q171834>;
+	schema:isPartOf <https://w3id.org/yearsoflead/event>;
+	cwrc:representedBy <https://w3id.org/yearsoflead/item/film>.
+
+<https://w3id.org/yearsoflead/item/film> a dbpedia-owl:Film;
+    frbr:has_subject <https://www.wikidata.org/wiki/Q1634609>;
+    crm:P2_has_type <https://www.wikidata.org/wiki/Q5398426>;
+    crm:P72_has_language <https://www.wikidata.org/wiki/Q652>;
+    crm:P108_was_produced_by <https://www.wikidata.org/wiki/Q19616>;
+    crm:P102_has_title <https://w3id.org/yearsoflead/item/film/title/Esterno_Notte>;
+    owl:sameAs <https://www.wikidata.org/wiki/Q112065180>;
+    dbpedia-owl:releasedate "26_04_2022".
+
+<https://w3id.org/yearsoflead/item/song> a schema:MusicRecording;
+    dbpedia-owl:recordLabel <https://www.wikidata.org/wiki/Q202585>;
+    crm:P2_has_type <https://w3id.org/yearsoflead/item/song/type/digital_soundtrack>;
+    frbr:has_creator <https://w3id.org/yearsoflead/item/song/author/Lucio_Dalla>;
+    crm:P102_has_title <https://w3id.org/yearsoflead/item/song/title/Balla_Balla_Ballerino>; 
+    crm:P72_has_language <https://www.wikidata.org/wiki/Q652>;
+    schema:isPartOf <https://w3id.org/yearsoflead/item/song/part_of/Dalla_album>;
+    dbpedia-owl:releasedate "1980";
+    dpn:hostedBy <https://www.wikidata.org/wiki/Q866>;
+    dcterms:rightsHolder <https://www.wikidata.org/wiki/Q56826329>.
+
+<https://w3id.org/yearsoflead/item/song/author/Lucio_Dalla> a dbpedia-owl:Singer; 
+    owl:sameAs <https://viaf.org/viaf/816148/#Dalla,_Lucio,_1943-2012>;
+    rdfs:label "Lucio Dalla".
+
+<https://w3id.org/yearsofthelead/item/article> a schema:Article;
+    owl:sameAs <https://www.wikidata.org/wiki/Q191067>;
+    frbr:has_subject <https://w3id.org/yearsoflead/event/PiazzaFontana>;
+    crm:P2_has_type <https://www.wikidata.org/wiki/Q234460>;
+    crm:P72_has_language <https://www.wikidata.org/wiki/Q652>;
+    dcterms:publisher <https://dbpedia.org/page/Corriere_della_Sera>;
+    dcterms:title <https://w3id.org/yearsofthelead/item/article/title/Orrenda_strage_a_Milano>;
+    schema:datepublished "1969_12_13";
+    dpn:hostedby <https://w3id.org/yearsofthelead/item/article/host/Corriere_archive>.
+
+<https://w3id.org/yearsofthelead/item/article/host/Corriere_archive> a dbpedia-owl:Archive;
+    owl:sameAs <https://archivio.corriere.it/Archivio/interface/landing.html>.
+
+<https://dbpedia.org/page/Corriere_della_Sera> a dbpedia-owl:newspaper;
+    crm:P55_has_current_location <https://www.geonames.org/3173435/milan.html>.
+
+<https://w3id.org/yearsoflead/item/book/author/Mario_Calabresi> a foaf:Person;
+      owl:sameAs <http://viaf.org/viaf/13519829>;
+      crm:152_has_parent <https://dbpedia.org/page/Luigi_Calabresi>;
+      schema:birthDate "1970-02-17";
+      schema:roleName <Journalist>.
+
+<https://w3id.org/yearsofthelead/item/book> a fabio:Book;
+	schema:About <https://w3id.org/yearsoflead/event/CalabresiMurder>;
+      schema:author <https://w3id.org/yearsoflead/item/book/author/Mario_Calabresi>;
+      schema:DatePublished "2007";
+      crm:P2_has_type <https://www.wikidata.org/wiki/Q571>;
+      crm:P102_has_title " Spingendo la notte più in là. Storia della mia famiglia e di altre vittime del terrorismo";
+      owl:sameAs <https://id.loc.gov/resources/instances/14956055.html>;
+      crm:P72_has_language <https://www.wikidata.org/wiki/Q652>;
+      crm:E53_Place <https://www.geonames.org/3173435/milan.html>;
+      dcterms:publisher <https://dbpedia.org/page/Arnoldo_Mondadori_Editore>;
+      frbr:has_subject <https://dbpedia.org/page/Luigi_Calabresi>;
+      crm:P51_has_current_owner <https://w3id.org/yearsoflead/item/book/host/FICLIT_Library>.
