@@ -131,11 +131,10 @@
           </div>
           <a href="assets/img/inner/ghostbuster Python.jpg" class="gallery-lightbox"> -->          
           
-       
-            <div id="metadata analysis" class="container-fluid">
-              <div class="section-title">
+           <section id="metadata analysis" class="container-fluid" data-aos="fade-up">
+            <div class="section-title">
                 <p>Metadata analysis</p>
-              </div>
+            </div>
               <div>
                 <p>
                   During this step of metadata analysis most of the objects we considered do not have a specific set of metadata standard clearly defined so due to the different features of our items we decided to choose common metadata standards that can guarantee interoperability and interchangeability between different systems and institutions but also a possible integration with the semantic web and LOD environment. The objects indicated by a * have a specific metadata set declared by the provider.
@@ -230,7 +229,7 @@
                     </div>
                   </div>
                 </div>
-              </section>      
+          </section>      
       </div>
       <section id="services" class="services">
         <div class="container-fluid" data-aos="fade-up">
@@ -510,6 +509,9 @@
           <div class="container-fluid" data-aos="fade-up">
             <div class="section-title">
               <p>Data description</p>
+            </div>
+            <div>
+              <p>In the knowledge representation phase we created a table for each item and we described them using a subject-predicate-object structure in order to produce RDF statements in the form of triples afterwards. The subject and the object are expressed in natural language, instead for the predicates we used the ontologies we chose in the conceptual model.</p>
             </div>
             <div class="row">
               <div class="col-lg-12">
@@ -1127,6 +1129,104 @@
             </div>
           </div>
         </section>
+        <section class="inner-page">
+          <div class="container-fluid">
+            <div class="section-title">
+              <p>URI production</p>
+            </div>
+            <p>
+              In this phase we chose 4 items we considered most representative for our domain and we described them and their related entities in the form of URIs.The items whe chose are the Book of Mario Calabresi, the Film about Aldo Moro’s Kidnapping, the Song by Lucio Dalla and the Article about the Piazza Fontana bombing.
+            </p>
+            <p>
+              &lt;https://w3id.org/yearsoflead&gt;
+              <br>
+              &nbsp;  &lt;https://w3id.org/yearsoflead/event&gt;
+                <br>
+              &nbsp;  &lt;https://w3id.org/yearsoflead/event/PiazzaFontana&gt;
+                <br>
+              &nbsp;  &lt;https://w3id.org/yearsoflead/event/CalabresiMurder&gt;
+                <br>
+              &nbsp;  &lt;https://w3id.org/yearsoflead/event/BolognaMassacre&gt;
+                <br>
+              &nbsp;  &lt;https://w3id.org/yearsoflead/person/AldoMoro&gt;
+                </p>
+                <p>
+                &lt;https://w3id.org/yearsoflead/item/film&gt;
+                <br>
+                &nbsp;   &lt;https://w3id.org/yearsoflead/item/film/language/italian&gt;
+                <br>
+                &nbsp;   &lt;https://w3id.org/yearsoflead/item/film/subject/AldoMoro_kidnapping&gt;
+                <br>
+                &nbsp;   &lt;https://w3id.org/yearsoflead/item/film/title/Esterno_Notte&gt;
+                <br>
+                &nbsp;   &lt;https://w3id.org/yearsoflead/item/film/date/26_04_2022&gt;
+                <br>
+                &nbsp;   &lt;https://w3id.org/yearsoflead/item/film/producer/RAI&gt;
+                <br>
+                &nbsp;   &lt;https://w3id.org/yearsoflead/item/film/type/tv_series&gt;
+                </p>
+                <p>
+
+                  &lt;https://w3id.org/yearsoflead/item/book&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/book/language/italian&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/book/place/Milan&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/book/author/Mario_Calabresi&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/book/publisher/Mondadori&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/book/year/2007&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/book/subject/Calabresi_murder&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/book/host/FICLIT_Library&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/book/title/Spingendo_la_notte_più_in_là&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/book/type/printed_book&gt;
+                </p>
+                <p>
+                  &lt;https://w3id.org/yearsoflead/item/article&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/article/date/13_12_1969&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/article/publisher/Corriere_della_Sera&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/article/language/italian&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/article/type/text&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/article/title/Orrenda_strage_a_Milano&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/article/host/Corriere_archive&gt;
+                </p>
+                <p>
+                  &lt;https://w3id.org/yearsoflead/item/song&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/song/type/digital_soundtrack&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/song/singer/Lucio_Dalla&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/song/title/Balla_Balla_Ballerino&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/song/copyright/SONY&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/song/host/Youtube&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/song/date/1980&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/song/part_of/Dalla_album&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/song/language/italian&gt;
+                  <br>
+                  &nbsp; &lt;https://w3id.org/yearsoflead/item/song/provider/RCA_Record_Label&gt;
+                </p>
+
+            </p>
+          </div>
+        </section>
       <!-- <table class="table-dark">
         <thead>
           <tr>
@@ -1158,6 +1258,26 @@
       </table> -->
 
     </section>
+    <section class="inner-page">
+      <div class="container-fluid">
+        <div class="section-title">
+          <p>RDF production</p>
+        </div>
+        <p>
+          In this step we used our URIs in order to produce RDF statements in the form of triples and we adopted the turtle serialization for representing them. During this process we used also authority control voices in order to provide an uniform and unambiguous way to represent and retrieve information about our entities and other sources for describing them more precisely.
+        </p>
+    <div class="emgithub-container">
+      <div class="emgithub-file">
+        <div class="file-data">
+          <div class="code-area">
+                <code>
+                    <script src="https://gist.github.com/lucia1299/2dfb331bd4299dc5590a480b830c16f2.js"></script>
+              </code>
+          </div>
+        </div>
+      </div>
+    </div>
+  
 
   </main><!-- End #main -->
 
