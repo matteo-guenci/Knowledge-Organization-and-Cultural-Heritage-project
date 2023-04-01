@@ -55,6 +55,7 @@
           <li><a class="nav-link scrollto" href="index.html#about">Domain</a></li>
           <li><a class="nav-link scrollto " href="index.html#portfolio">Items</a></li>
           <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#data description">Data description</a></li>
           <li class="dropdown"><a href="#"><span>The Project</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <!-- <li><a href="inner-page.html">Knowledge Organization</a></li> -->
@@ -63,6 +64,9 @@
               <ul>
                 <li><a href="#">Conceptual map</a></li>
                 <li><a href="#">E/R model</a></li>
+                <li><a href="#">Metadata analysis</a></li>
+                <li><a href="#">Metadata alignment</a></li>
+                <li><a href="#">Theoretical model</a></li>
                 <li><a href="#">Conceptual model</a></li>
               </ul>
             </li>
@@ -72,7 +76,8 @@
               <li><a href="#">Conceptual Model</a></li> -->
               <li class="dropdown"><a href="#"><span>Knowledge Representation</span> <i class="bi bi-chevron"></i></a>
                 <ul>
-                  <li><a href="#">Data Description</a></li>
+                  <li><a href="inner-page.html#metadata alignement">Data Description</a></li>
+                  <li><a href="#">URI production</a></li>
                   <li><a href="#">RDF production</a></li>
                   <li><a href="#">RDF visualization</a></li>
                   <!-- <li><a href="#">Deep Drop Down 4</a></li>
@@ -132,11 +137,11 @@
       <section id="services" class="services">
         <div class="container-fluid" data-aos="fade-up">
           <div class="section-title">
-            <p>Data description</p>
+            <p id="metadata alignement">Metadata alignement</p>
           </div>
           <div>
             <p>
-              This is the metadata alignement
+              After defining the metadata standards, we considered some of the properties of the items following the 4W model (Who, Where, What, When) and then we tried to align where possible the different standards in order to find the best way for expressing all the connections of our items through shared vocabularies and semantic ontologies that can guarantee interoperability and accessibility in a semantic web environment. Where it was not possible to find an alignment we indicated it whit a “/”. 
             </p>
           </div>
           <div class="row">
@@ -144,8 +149,8 @@
               <nav>
                 <div class="nav nav-tabs bg-dark" id="nav-tab" role="tablist">
                   <a class="nav-item nav-link active" id="nav-table1-tab" data-toggle="tab" href="#nav-table1" role="tab" aria-controls="nav-table1" aria-selected="true"><div class="icon-box">
-                    <i class="ri-bar-chart-box-line"></i>
-                  </div>Who</a>
+                    <h3><i class="ri-bar-chart-box-line"></i></h3>
+                  </div><h3>Who</h3></a>
                   <a class="nav-item nav-link" id="nav-table2-tab" data-toggle="tab" href="#nav-table2" role="tab" aria-controls="nav-table2" aria-selected="false"><div class="icon-box">
                     <i class="ri-bar-chart-box-line"></i>
                   </div>What</a>
@@ -402,9 +407,14 @@
         </div>
       </section>
       
-      <div class="container">
+      <div class="container-fluid">
         <div class="section-title">
           <p>Metadata analysis</p>
+        </div>
+        <div>
+          <p>
+            During this step of metadata analysis most of the objects we considered do not have a specific set of metadata standard clearly defined so due to the different features of our items we decided to choose common metadata standards that can guarantee interoperability and interchangeability between different systems and institutions but also a possible integration whit the semantic web and LOD environment. The objects indicated by a * have a specific metadata set declared by the provider.
+          </p>
         </div>
         <table class="table table-dark table-hover">
           <thead>
@@ -435,8 +445,29 @@
             </tr>
           </tbody>
         </table>
+        <section class="about">
+          <div>
+            <h3><strong>Standards involved</strong></h3>
+            <div class="row">
+              <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100"></div>
+                <ul>
+                  <li><i class="ri-check-double-line"></i> <strong>Schema.org</strong> was created by Google and Microsoft and is a collaborative project that aims to produce  and maintain metadata schema for structured data on the web. The schema.org vocabulary can be shared easily by different institutions and can be used with different encodings (including RDFa, Microdata and JSON-LD), in order to provide enriched digital experiences in different contexts and a good interoperability whit search engines.</li>
+                  <li><i class="ri-check-double-line"></i> <strong>Dublin Core</strong> is a set of 15 metadata elements that can  provide a basic framework for describing digital resources such as documents, images, and web pages. The goal of Dublin Core is to provide a simple, standardized way to describe resources that can be easily understood and shared by different communities and systems. Its flexibility and simplicity offers the possibility to be used also by a non-expert cataloger and its interoperability allows to be used in LOD environment and easily recognized by search engines a well.</li>
+                  <li><i class="ri-check-double-line"></i> <strong>EBUCore</strong> is a collection of basic descriptive and technical/structural metadata elements used to describe audio, video and other resources for a wide range of broadcasting applications including archives, exchange and production in the context of a Service Oriented Architecture.   EBUCore is based on the Dublin Core to maximise interoperability with the community of Dublin Core users such as the European Digital Library 'Europeana'. EBUCore takes into account latest developments in the Semantic Web and Linked Open Data communities in order to gurarantee full compatibility whitin these environments</li>
+                  <li><i class="ri-check-double-line"></i> <strong>METS</strong> (Metadata Encoding and Transmission Standard) is a metadata standard developed by the Library of Congress and it is used for encoding descriptive, administrative, and structural metadata for digital objects and recording complex relationships betweend different metadata formats. It can also provide a useful standard for exchanging objects between digital library repositories and offers the ability to associate a digital object with behaviors or services. It is based on XML language and is maintained by the Network Development and MARC Standards Office of the Library of Congress." METS is a powerful and flexible metadata standard that enables digital objects to be described in detail, with complex relationships between different parts of the object and can be used in combination with other metadata standards, such as Dublin Core, MODS, and PREMIS, to provide a more complete and integrated description of the object. It is typically used in conjunction with digital library and archive management systems, which use METS-encoded metadata to manage and provide access to digital objects.</li>
+                  <li><i class="ri-check-double-line"></i> <strong>MARC21</strong> stands for Machine-Readable Cataloging and is an extension of the original MARC (MAchine-Readable Cataloging) format, which was developed in the 1960s. MARC 21 is a widely used standard for the representation and exchange of bibliographic and related information in machine-readable form. The standard was developed by the Library of Congress in collaboration with other national libraries and information organizations and is used by libraries and other information institutions worldwide to manage their bibliographic data. MARC 21 has been widely adopted by libraries and other information institutions, and there are numerous software tools available for creating, editing, and managing MARC 21 records. The standard has also been extended to support other types of information, such as archival and museum collections.</li>
+                  <li><i class="ri-check-double-line"></i> <strong>PREMIS</strong> (Preservation Metadata: Implementation Strategies) is a metadata standard specifically designed for the preservation of digital objects. Developed and maintained by the Library of Congress, PREMIS helps ensure the long-term accessibility, usability, and understandability of digital resources by providing a set of metadata elements to describe and manage them throughout their lifecycle. PREMIS metadata is typically embedded in a larger metadata framework (such as METS, the Metadata Encoding and Transmission Standard) and can be implemented in various formats, including XML. PREMIS has wide adoption among digital preservation repositories, as it allows institutions to capture and manage essential information for the long-term management and preservation of digital objects. By implementing the PREMIS standard, organizations can ensure consistent and interoperable metadata practices, facilitating the sharing and exchange of preservation metadata across different systems and institutions.</li>
+                  <li><i class="ri-check-double-line"></i> <strong>MODS</strong> (Metadata Object Description Schema) is an XML-based metadata standard developed by the Library of Congress to provide a flexible and extensible schema for describing a wide range of resources and facilitating discovery, access, and management of digital objects in libraries, archives, and other information environments. It is also esigned to be both human-readable and machine-readable, making it suitable for various applications, including digital libraries, repositories, and cataloging systems.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div>
+          <p></p>
+        </div>
       </div>
-      <div class="container">
+      <div class="container-fluid">
         <div class="section-title">
           <p>Metadata alignement</p>
         </div>
