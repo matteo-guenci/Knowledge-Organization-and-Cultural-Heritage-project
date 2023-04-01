@@ -1581,3 +1581,6 @@ section {
   justify-content: center;
   align-items: center;
 }
+.table-title {
+  text-align: center;
+}

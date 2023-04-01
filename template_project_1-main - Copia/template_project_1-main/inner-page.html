@@ -98,7 +98,7 @@
 
     <!-- ======= Breadcrumbs ======= -->
     <section class="breadcrumbs">
-      <div class="container">
+      <div class="container-fluid">
 
         <div class="d-flex justify-content-between align-items-center">
           <h2>Inner Page</h2>
@@ -150,16 +150,16 @@
                 <div class="nav nav-tabs bg-dark" id="nav-tab" role="tablist">
                   <a class="nav-item nav-link active" id="nav-table1-tab" data-toggle="tab" href="#nav-table1" role="tab" aria-controls="nav-table1" aria-selected="true"><div class="icon-box">
                     <h3><i class="ri-bar-chart-box-line"></i></h3>
-                  </div><h3>Who</h3></a>
+                  </div><h4>Who</h4></a>
                   <a class="nav-item nav-link" id="nav-table2-tab" data-toggle="tab" href="#nav-table2" role="tab" aria-controls="nav-table2" aria-selected="false"><div class="icon-box">
-                    <i class="ri-bar-chart-box-line"></i>
-                  </div>What</a>
+                    <h3><i class="ri-bar-chart-box-line"></i></h3>
+                  </div><h4>What</h4></a>
                   <a class="nav-item nav-link" id="nav-table3-tab" data-toggle="tab" href="#nav-table3" role="tab" aria-controls="nav-table3" aria-selected="false"><div class="icon-box">
-                    <i class="ri-bar-chart-box-line"></i>
-                  </div>When</a>
+                    <h3><i class="ri-bar-chart-box-line"></i></h3>
+                  </div><h4>When</h4></a>
                   <a class="nav-item nav-link" id="nav-table4-tab" data-toggle="tab" href="#nav-table4" role="tab" aria-controls="nav-table4" aria-selected="false"><div class="icon-box">
-                    <i class="ri-bar-chart-box-line"></i>
-                  </div>Where</a>
+                    <h3><i class="ri-bar-chart-box-line"></i></h3>
+                  </div><h4>Where</h4></a>
                 </div>
               </nav>
               <div class="tab-content" id="nav-tabContent">
@@ -419,29 +419,72 @@
         <table class="table table-dark table-hover">
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">Title</th>
+              <th scope="col">Object</th>
+              <th scope="col">Provider</th>
+              <th scope="col">Metadata</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td>Article: “La Battaglia di Valle Giulia”</th>
+              <td>Online article</td>
+              <td>L’Espresso</td>
+              <td>Schema.org</td>
             </tr>
             <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <td>Article by Corriere della Sera</th>
+              <td>Digitized article</td>
+              <td>Corriere della sera</td>
+              <td>Schema.org</td>
             </tr>
             <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
+              <td>Photo of Macchiarini</th>
+              <td>Digitized photo</td>
+              <td>ANSA</td>
+              <td>Dublin Core</td>
+            </tr>
+            <tr>
+              <td>Berlinguer’s first speech as a secretary of PCI</th>
+              <td>Tv interview</td>
+              <td>Rai Tv Archive</td>
+              <td>EBUCore</td>
+            </tr>
+            <tr>
+              <td>Esterno Notte</th>
+              <td>TV episodic film</td>
+              <td>Rai Tv Archive</td>
+              <td>EBUCore</td>
+            </tr>
+            <tr>
+              <td>Report by the Commisione d’Inchiesta on P2</th>
+              <td>Digitized report</td>
+              <td>Rete degli Archivi per non dimenticare</td>
+              <td>PREMIS</td>
+            </tr>
+            <tr>
+              <td>Balla Balla Ballerino</th>
+              <td>Music video</td>
+              <td>Youtube</td>
+              <td>Schema.org</td>
+            </tr>
+            <tr>
+              <td>Spingendo la notte più in là</th>
+              <td>Printed book</td>
+              <td>Opac SBN</td>
+              <td>*MARC21</td>
+            </tr>
+            <tr>
+              <td>Photo of Custra omicide</th>
+              <td>Digitized photo</td>
+              <td>ANSA</td>
+              <td>Dublin Core</td>
+            </tr>
+            <tr>
+              <td>Article by the Observer </th>
+              <td>Digitized article</td>
+              <td>Newspaper.com</td>
+              <td>MODS</td>
             </tr>
           </tbody>
         </table>
@@ -463,44 +506,6 @@
             </div>
           </div>
         </section>
-        <div>
-          <p></p>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="section-title">
-          <p>Metadata alignement</p>
-        </div>
-        <table class="table table-dark table-hover">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
       <!-- <table class="table-dark">
         <thead>
           <tr>
