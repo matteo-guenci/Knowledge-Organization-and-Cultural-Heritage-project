@@ -670,11 +670,11 @@ section {
   position: absolute;
 }
 
-/* .carousel-inner .carousel-item-next.carousel-item-left,
+.carousel-inner .carousel-item-next.carousel-item-left,
 .carousel-inner .carousel-item-prev.carousel-item-right {
-} */
+} 
 
-/*.services .icon-box {
+/* .services .icon-box {
   text-align: center;
   border: 1px solid #ebebeb;
   padding: 80px 20px;
@@ -726,7 +726,7 @@ section {
   border-color: #fff;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
-}*/
+} */
 
 /*--------------------------------------------------------------
 # Cta
