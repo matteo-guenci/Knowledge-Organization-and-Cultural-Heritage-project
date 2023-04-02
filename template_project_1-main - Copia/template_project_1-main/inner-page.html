@@ -61,12 +61,12 @@
               <li class="dropdown"><a href="inner-page.html#"><span>Knowledge Organization</span> <i class="bi bi-chevron"></i></a>
 
               <ul>
-                <li><a href="#">Conceptual map</a></li>
-                <li><a href="#">E/R model</a></li>
+                <li><a href="#conceptual map">Conceptual map</a></li>
+                <li><a href="#E/R model">E/R model</a></li>
                 <li><a href="#metadata analysis">Metadata analysis</a></li>
                 <li><a href="#metadata alignement">Metadata alignement</a></li>
-                <li><a href="#">Theoretical model</a></li>
-                <li><a href="#">Conceptual model</a></li>
+                <li><a href="#theoretical model">Theoretical model</a></li>
+                <li><a href="#conceptual map">Conceptual model</a></li>
               </ul>
             </li>
 
@@ -78,7 +78,7 @@
                   <li><a href="#data description">Data Description</a></li>
                   <li><a href="#URI production">URI production</a></li>
                   <li><a href="#RDF production">RDF production</a></li>
-                  <li><a href="#">RDF visualization</a></li>
+                  <li><a href="#RDF Visualization">RDF visualization</a></li>
                   <!-- <li><a href="#">Deep Drop Down 4</a></li>
                   <li><a href="#">Deep Drop Down 5</a></li> -->
                 </ul>
@@ -129,11 +129,16 @@
           <div class="section-title">
               <p>Conceptual map</p>
           </div>
-          
           <div>
             <p>Our project focuses on the Years of Lead, a tumultuous period in Italian history spanning from the late 1960s to the late 1980s. This period, which was marked by intense social unrest, saw the happening of several facts that had a long-lasting effect on Italy's socio-political environment. The items we selected for our project were chosen for their historical significance and their capacity to offer insightful information about the events that took place during the Years of Lead.
               The conceptual map acts as a visual depiction of the information gleaned from the selected items, highlighting in a natural language format how those items are connected to the Years of Lead. The relationships between the many elements are made intuitively clear by using this map, which also makes the data more approachable and simpler to understand to humans.
               The Years of Lead, as main topic, is represented in the middle by the blue node, while the selected items are represented by the red nodes. The subtopics (events, persons, organizations) that connect the items to the main topic of interest are represented by the green nodes. Lastly, the data that was extracted directly from the items is expressed by the orange nodes.</p>
+          </div>
+          <br>
+          <div class="ginner-container" style>
+            <div class="gslide-media gslide-image">
+              <img src="assets\img\graphs\ConceptualMap.svg" height="100%" width="100%" class="zoomable"/> 
+            </div>
           </div>
           </section>
 
@@ -145,6 +150,10 @@
               <p>Our Entity-Relationship model is intended to display information and connections gathered from the conceptual map at a more abstract level. By doing this, the E/R model seeks to present a higher-level view of the domain, providing an overview of the main elements and how they relate to one another without going into specifics. The model focuses on expressing individuals, dates, things, and events as entities, and the arrows that connect them show the relationships between these entities, serving as a visual depiction of the connections between the items and the other different components. These linkages demonstrate the complex interplay between individuals, things, events, and dates, exhibiting patterns and trends that aid in our comprehension of the Years of Lead period.
                 The goal of our E/R model is to provide a more generalized view of the domain by presenting metadata derived from the elements of the conceptual map. This higher-level perspective allows for an easier understanding of the project's overall structure, while still maintaining a clear connection to the detailed information provided in the conceptual map.
                 </p>
+            </div>
+            <br>
+            <div>
+               <img src="assets\img\graphs\ERmodel.svg" height="100%" width="100%" class="zoomable"/> 
             </div>
         </section>
     
@@ -582,6 +591,10 @@
             </p>
           </div>
           </div>
+          <br>
+          <div>
+             <img src="assets\img\graphs\TheoreticalModel.svg" height="100%" width="100%" class="zoomable"/> 
+          </div>
         </section>
         
         <section id="conceptual model" class="container-fluid" data-aos="fade-up">
@@ -628,6 +641,11 @@
               <i class="ri-check-double-line"></i> <strong>The OWL Web Ontology Language:</strong> is intended to provide a language that can be used to describe the classes and relations between them that are inherent in Web documents and applications. It provides a rich and expressive framework for representing complex knowledge and relationships, enabling better data integration, interoperability, and reasoning capabilities. OWL builds on top of the Resource Description Framework (RDF), which gives a simple way to represent information as subject-predicate- object triples, also known as RDF statements.<br>
               <i class="ri-check-double-line"></i> <strong>RDF Schema:</strong> is a data-modelling vocabulary and schema language for the Semantic Web that extends the Resource Description Framework (RDF). Developed by the World Wide Web Consortium (W3C), RDFS provides a set of basic constructs for creating and describing vocabularies, or ontologies, which define the relationships between classes and properties in a domain.<br>
             </ul>
+            <br>
+            <div>
+               <img src="assets\img\graphs\ConceptualModel.svg" height="100%" width="100%" class="zoomable"/> 
+            </div>
+          </section>
 
           <section id="data description" class="inner-page">
             <div class="container-fluid" data-aos="fade-up">
@@ -1403,8 +1421,22 @@
           </div>
         </div>
       </div>
-      </div>
       </section>
+
+      <section id="RDF Visualization" class="inner-page">
+        <div class="container-fluid" data-aos="fade-up">
+          <div class="section-title">
+            <p>RDF Visualization</p>
+          </div>
+          <div>
+            <p>
+              Finally, in the last step we created a visual representation of our RDF statements and consequently have a better understand of the new knowledge we managed to produce.
+              </p>
+          </div>
+          <br>
+          <div>
+            <img src="assets\img\graphs\final_rdf.png" width="100%" height="100%"/>
+          </div>
 </section>
 
     </main><!-- End #main -->
